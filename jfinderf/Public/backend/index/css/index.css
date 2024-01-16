@@ -1,0 +1,154 @@
+body {
+    background-color: #f0f2f5;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+
+li {
+  list-style-type: none;
+
+}
+
+a:hover, a:visited, a:link, a:active{
+  text-decoration:none;
+}
+
+.sidebarfont {
+  font-size: 20px;
+  cursor: pointer;
+  color:black;
+  padding:8px;
+}
+
+.sidebarfont :hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.sidenavsnpm  {
+  padding: 6px 8px 6px 16px;
+}
+
+.icons {
+  padding:10px;
+}
+
+/* Rounded pill classes for horizontal sides */
+.rounded-pill-left {
+    border-top-left-radius: 50rem !important;
+    border-bottom-left-radius: 50rem !important;
+    cursor: pointer;
+  }
+  .rounded-pill-right {
+    border-top-right-radius: 50rem !important;
+    border-bottom-right-radius: 50rem !important;
+  }
+  
+  .topcard {
+     
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.1);
+  }
+
+  .card-body {
+      padding-bottom: -10px;
+      cursor: pointer;
+  }
+
+  .postcard {
+     border-radius:45px;
+      color:gray;
+      background-color: #f0f2f5;
+      border:0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
+  }
+
+.navbar {
+    background-color: white;
+    height:70px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}  
+
+.form-control {
+    border-radius: 50px;
+} 
+
+.form-group input {
+  outline: 0;
+  border-width: 0 0 2px;
+  /*border: black;*/
+  border-radius:25px;
+  margin-top:15px;
+}
+
+input:focus {
+  border-color: blue
+}
+
+.postimg{
+    width:100%;
+    object-fit: cover;        
+}
+
+.posttext { 
+    border: none;
+    width: 100%;
+    font-size: 20px;
+}
+
+.posttext:focus {
+  outline: none;
+}
+
+.media img {
+  height:150px;
+  width:150px;
+  border-radius: 15%;
+  margin:10px;
+  
+}
+
+/* POST BTN DOTS*/
+.editpostbtn{
+  padding: 0;
+border: none;
+background: none;
+}
+
+.editpostbtn:focus,.editpostbtn:active {
+  outline: none !important;
+  box-shadow: none;
+  color:gray;
+}
+
+/*TOP NAVBAR ICONS*/
+.topnavicons {
+  margin-left:70px;
+  padding-left:50px;
+}
+
+/*UPLOAD POST PIC*/
+.uploadpiccard {
+  border-radius: 25%;
+  width:100%;
+  height:20%;
+}
+
+.share-icons {
+  cursor: pointer;
+  margin-top:20px;
+  display:flex;
+  padding-right: 10px;
+  justify-content: space-between;
+}
+
+.modal{
+  border-radius: 15%;
+}
+
+.image-upload>input {
+  display: none;
+}
