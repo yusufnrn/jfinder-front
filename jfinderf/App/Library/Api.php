@@ -1,6 +1,5 @@
 <?php
 
-namespace Library;
 class  Api
 {
     public static function loginByApi($postArray)

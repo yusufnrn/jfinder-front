@@ -1,0 +1,64 @@
+body {
+    color: rgb(57, 48, 47);
+    background-color: var(--dark-blue);
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    background-image: url('../../background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+:root{
+    --dark-blue: hsl(180, 2%, 88%);
+    --white : hsl(0,0%, 100%);
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    /* Başlık için diğer stil tanımları */
+}
+
+.logo {
+    height: 200px; /* veya logo için uygun olan başka bir yükseklik */
+    margin-left: 10px; /* Sitenin kenar boşluklarını ayarlamak için */
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button,
+nav
+{
+    font-family:'Raleway', 'sans-serif'; /*yukarıdaki itemlerin fontlarını belirledim */
+}
+
+.container{ /*siteyi ortaladık */
+    width: 94%;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+header {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    gap: 36px;
+}

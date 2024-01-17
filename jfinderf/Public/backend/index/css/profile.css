@@ -58,7 +58,7 @@ body {
 .navbar-collapse > .navbar-nav > .nav-item{
     padding:25px;
     color:black;
-}; 
+}
 
 .navbar-text {
     color:black;
@@ -94,7 +94,7 @@ body {
   .editpostbtn:focus,.editpostbtn:active {
     outline: none !important;
     box-shadow: none;
-    color:gray;
+    color: gray;
   }
   
   .flexclass {

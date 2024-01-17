@@ -22,9 +22,9 @@ class loginController extends mainController
             $postArray = mHelper\mVariables::mReArray($_POST);
 
             $postData = [
-                'apiUrl' => 'http://portal.localhost/session/login',
-                'users_email' => $postArray['users_email'],
-                'users_password' => $postArray['users_password'],
+                'apiUrl' => 'http://backend.jfinder/session/login',
+                'usersEmail' => $postArray['usersEmail'],
+                'usersPassword' => $postArray['usersPassword'],
             ];
 
             $userExists = self::$loginModel->session($postData);
@@ -37,10 +37,12 @@ class loginController extends mainController
 
             if (isset($_SESSION['info'])) {
                 print_r($_SESSION);
-                header("Location: /portal");
+               // header("Location: /portal");
+                echo "Girdin";
             } else {
                 $data = [$userExists];
-                header("Location: /login");
+               // header("Location: /login");
+                echo "Giremedin";
             }
         }
     }

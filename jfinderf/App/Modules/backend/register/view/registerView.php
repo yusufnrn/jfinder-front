@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kayıt Ol - WorkVisa</title>
+    <title>Kayıt Ol - jFinder</title>
     <link rel="stylesheet" href="../../../../../Public/frontend/css/styles.css">
 </head>
 <body>

@@ -60,6 +60,9 @@
     <!-- style CSS
 		============================================ -->
     <link rel="stylesheet" href="../../../../../Public/backend/css/style.css">
+    <!-- style CSS
+		============================================ -->
+    <link rel="stylesheet" href="../../../../../Public/backend/css/customs.css">
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="../../../../../Public/backend/css/responsive.css">
@@ -77,7 +80,7 @@
 
 <?php
 if (isset($_SESSION['email'])) {
-    header("Location: /portal");
+   // header("Location: /profile");
 }
 ?>
 <div class="color-line"></div>

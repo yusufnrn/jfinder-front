@@ -6,14 +6,13 @@ class App
     protected static $currentMethod;
     protected static $routes = [];
     public static $home;
-    public static $apiKey;
+
 
     public function __construct($config)
     {
         self::$currentMethod = $_SERVER['REQUEST_METHOD'];
         self::$currentPath = $_SERVER['REQUEST_URI'];
         self::$home = $config['home'];
-        self::$apiKey = $config['apiKey'];
         self::startRoute();
     }
 
@@ -68,7 +67,7 @@ class App
                 if(file_exists($file)) {
                     require_once $file;
                     if (class_exists($controller)) {
-                        $class = new $controller(self::$apiKey);
+                        $class = new $controller();
                         if (method_exists($class, $method)) {
                             array_shift($params);
                             return call_user_func_array([$class,$method],array_values($params));
